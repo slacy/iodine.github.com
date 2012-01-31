@@ -1,11 +1,17 @@
 {% extends "_layout/layout.html" %}
 
+{% meta %}
+{"foo": "bar" }
+{% endmeta %}
+
 {% block html %}
   {% markdown %}
 Hello, world
 ===============
 
 Yo, dawgs
+
+{% link "home" %}
 
   {% endmarkdown %}
 {% endblock %}

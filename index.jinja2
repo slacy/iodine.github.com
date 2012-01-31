@@ -1,5 +1,10 @@
 {% extends "_layout/layout.html" %}
 
+{% meta %}
+{"inbound": ["home"]}
+{% endmeta %}
+
 {% block html %}
   Hello, world
+  {% link "home" %}
 {% endblock %}
