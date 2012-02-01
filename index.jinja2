@@ -5,6 +5,9 @@
 {% endmeta %}
 
 {% block html %}
-  Hello, world
+  {% markdown %}
+# This is the index
   {% link "home" %}
+  {% link "content test" %}
+  {% endmarkdown %}
 {% endblock %}

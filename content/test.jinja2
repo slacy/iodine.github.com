@@ -1,7 +1,7 @@
 {% extends "_layout/layout.html" %}
 
 {% meta %}
-{"foo": "bar" }
+{"inbound": "content test" }
 {% endmeta %}
 
 {% block html %}
@@ -9,9 +9,9 @@
 Hello, world
 ===============
 
-Yo, dawgs
+  Yo, dawgs
 
-{% link "home" %}
-
-  {% endmarkdown %}
+  {% link "home" %}
+  some more __markdown__
+{% endmarkdown %}
 {% endblock %}
