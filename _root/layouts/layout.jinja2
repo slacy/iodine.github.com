@@ -6,7 +6,7 @@
   <body>
     {% link "home" %}
     <div class="container">
-      {% block html %}{% endblock %}
+      {% block html %}{% block markdown %}{% endblock %}{% endblock %}
     </div>
   </body>
 </html>
