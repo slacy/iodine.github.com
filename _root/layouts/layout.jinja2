@@ -5,14 +5,19 @@
     <title>{% block title %}Iodine{% endblock %}</title>
   </head>
   <body>
-    <div class="container siteheader">
-      <div class="span-18 push-1 last">
-        <div class="title"><a href="{% url "home" %}">Iodine</a></div>
-        <span class="small">Cloud deployment for mortals.</span>
-      </div>
-    </div>
     <div class="container">
-      <div class="span-21 last">
+      <div class="span-24 header">
+        <div class="span-5">
+          <div class="logo">
+            <a href="{% url "home" %}">Iodine Wiki</a><br/>
+          </div>
+        </div>
+        <div class="span-12 last">
+          <div class="tagline small">Cloud deployment for devolpers who need to get it right.</span></div>
+        </div>
+      </div>
+      <div class="span-24 sep"></div>
+      <div class="span-24 prepend-top">
       {% block html %}
         <div class="span-18 push-1 last">
         {% markdown %}{% block markdown %}{% endblock %}{% endmarkdown %}
