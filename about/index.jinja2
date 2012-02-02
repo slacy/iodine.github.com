@@ -1,6 +1,10 @@
 {% extends "_root/layouts/layout.jinja2" %}
 
-{% meta %}{inbound: [foo, bar]}{% endmeta %}
+{% meta %}
+{inbound: [about]}
+{% endmeta %}
+
+{% block subtitle %}More about Iodine{% endblock %}
 
 {% block markdown %}
   Hello, world
