@@ -42,7 +42,7 @@ body {
 
 .header {
     background: #ddd;
-    border-radius: 13px;
+    border-radius: 13px 13px 0 0;
 }
 
 .sep {
