@@ -1,11 +1,24 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="{% file "/css/blueprint/screen.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% file "/css/blueprint/screen.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% file "/css/style.css" %}"/>
     <title>{% block title %}Iodine{% endblock %}</title>
   </head>
   <body>
+    <div class="container siteheader">
+      <div class="span-18 push-1 last">
+        <div class="title"><a href="{% url "home" %}">Iodine</a></div>
+        <span class="small">Cloud deployment for mortals.</span>
+      </div>
+    </div>
     <div class="container">
-      {% block html %}{% block markdown %}{% endblock %}{% endblock %}
+      <div class="span-21 last">
+      {% block html %}
+        <div class="span-18 push-1 last">
+        {% markdown %}{% block markdown %}{% endblock %}{% endmarkdown %}
+        </div>
+      {% endblock %}
+      </div>
     </div>
   </body>
 </html>
